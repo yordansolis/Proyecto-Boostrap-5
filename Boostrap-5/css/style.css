@@ -1,0 +1,146 @@
+/*---------Mis Variables-------*/
+:root{
+    --first-color: rgba(217, 0,99);
+    --first-alpha-color: rgba(217, 0,98,0.75);
+
+    --segundo-color: rgba(20, 25,45);
+    --segundo-alpha-color: rgba(20, 25,45,0.75);
+
+    --third-color: rgba(80, 20,100);
+    --third-alpha-color: rgba(80, 20,100,0.75);
+
+    --link-color: rgba(80,158,227);
+    --link-alpha-color: rgba(80,158,227,0.75);
+
+
+    --bg-color:rgba(245,245,245);
+    --bg-alpha-color:rgba(245,245,245,0.75);
+
+
+
+}
+.bg-colores-blue-green {
+    background-color: rgba(83,184,152,1);
+    background-image: linear-gradient(
+        135deg,rgba(47,154,244,0.92),
+        rgba(7,31,51,0.97)79%
+    );
+    background-image: linear-gradient(
+        131deg,rgba(47,154,244,0.92),
+        rgba(7, 48, 51, 0.97)79%
+    );
+
+}
+.bg-segundo-alpha-color{
+    background-color: var(--segundo-alpha-color);
+}
+
+
+
+/*---------Mis estilos style-------*/
+body{
+    font-family: 'Raleway', sans-serif;
+ 
+}
+.bg-colo-text{
+    color:var(--bg-color);
+}
+.nav-item{
+
+    transition: all .3s ease-out;
+}
+.bg-hero-image{
+background-image: var(--bg--imagen);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+/*---------Estilos de Boostrap-------*/
+.navbar-brand img{
+    width:auto;
+    height: 35px;
+}
+
+.bg-dark{
+    background-color: var(--segundo-color)!important;
+    color: var(--first-color) !important;
+}
+.bg-color{
+  background-color:  var(--bg-alpha-color);
+}
+
+
+/* icono de menu de navegacion*/                                       
+.navbar-dark .navbar-toggler{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
+
+}
+.navbar-dark .navbar-toggler:hover{
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 99, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.75;
+}
+
+
+.nav-item:hover{
+    background-color: var(--first-color);
+}
+.nav-link{
+    color: var(--first-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: .5rem;
+}
+
+.dropdown-item:hover{
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all .3s ease-out;
+
+}
+.dropdown-item{
+      color: var(--segundo-color);
+}
+.nav-link:hover{
+    color: var(--bs-white);
+}
+a{
+    transition: all .3s ease-out;
+    color: var(--bg-alpha-color);
+}
+a:hover{
+    color: var(--first-alpha-color);
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d9005a'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+  }
+  
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d9005a'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+/*Dispositivos X-Small (teléfonos verticales, menos de 576px)*/
+/*  No hay consulta de medios para `xs` ya que este es el valor predeterminado en
+ Bootstrap*/
+
+/*Dispositivos pequeños (teléfonos exteriores, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*  Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+ }
+
+/* Dispositivos grandes (escritorios, 992px and up)*/
+@media (min-width: 992px) { 
+    .nav-item:hover{
+        background-color:transparent;
+    }
+ }
+
+/*/ X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {  }
